@@ -215,3 +215,175 @@ las que hacen que implementar un algoritmo de visión por computador sea una tar
 y ese es el motivo por el cual hemos querido hacer este curso,
 para que cada vez más personas se animen a realizar sus propias aplicaciones
 de análisis de imágenes.
+
+# Curso   Semana 1   Tema 2. Óptica   Óptica: definición y parámetros principales
+
+Óptica: definición y parámetros principales
+ 
+Hola,
+en este primer módulo del tema 2 vamos a introducir uno de los elementos principales en un sistema de visión:
+la óptica.
+Para ello, abordaremos distintos aspectos, cuál es su misión en un sistema de percepción,
+cuáles son los parámetros fundamentales que la definen y, finalmente, los diferentes tipos de ópticas que tenemos disponibles en el mercado.
+Todos hemos tenido en alguna ocasión una cámara de fotos entre las manos y nos hemos preguntado
+cuál es la función del juego de lentes que sobresale del cuerpo de la cámara.
+Pues bien,
+la función de una óptica es redireccionar los haces de luz, que provienen de la escena que
+pretendemos capturar, sobre la zona de elementos sensibles de la cámara
+para crear una imagen.
+Para ello, los diferentes elementos que la componen deberán facilitar la alineación
+del sistema óptico para obtener haces paralelos de rayos luminosos. Además, deberá permitirnos realizar
+un enfoque lo más preciso posible.
+A continuación, vamos a pasar a valorar cuáles son los parámetros fundamentales que definen una óptica.
+A la hora de escoger una óptica
+dentro de la amplia variedad que podemos encontrar,
+hemos de fijarnos en varios parámetros que suelen aparecer impresos en su carcasa,
+tales como la distancia focal, el número F,
+además de otros de los cuales dependerá en gran medida la calidad de la imagen que capturemos,
+como es el caso de la luminosidad y su rango de enfoque.
+Precisamente, la luminosidad de un objetivo está condicionada, entre otros aspectos, por la cantidad de lentes que lo componen,
+de qué materiales están fabricados,
+el tipo de recubrimiento de sus caras y de su tamaño, sus diámetros.
+A partir de éstos, se define la apertura máxima del diafragma,
+siendo éste un elemento mecánico con forma de cortinilla o aletas, como puede apreciarse en la imagen de la derecha,
+que permitirá regular la cantidad de luz que entra en la cámara.
+En las ópticas de mayor calidad, para facilitar el enfoque de la escena de trabajo,
+el objetivo lleva impreso una escala de distancias normalmente graduada en metros,
+de manera que podremos enfocar sin necesidad de utilizar el visor.
+En cuanto al resto de parámetros,
+la distancia focal es uno de los principales a la hora de seleccionar una óptica.
+Su valor suele venir expresado en milímetros y puede tomar un valor fijo o variar dentro de
+un cierto intervalo en las ópticas de tipo zoom.
+La distancia focal de una lente es la distancia entre el centro óptico de la lente y el foco o punto focal,
+cuando enfocamos al infinito.
+Los haces paralelos de rayos luminosos que proceden de la escena que pretendemos captar con nuestra
+cámara convergen sobre ese punto que hemos llamado punto focal.
+La distancia focal es el parámetro fundamental de nuestra óptica a la hora de relacionar el
+tamaño de los objetos presentes en la imagen
+y el que tienen en el mundo real.
+En el siguiente módulo se analizará en detalle los diferentes modelos empleados para establecer
+este tipo de relaciones.
+Otro de los parámetros es el denominado número F.
+Éste se utiliza como indicador comparativo entre objetivos. Se obtiene a través del cociente entre la
+apertura máxima y la distancia focal.
+El número F es inversamente proporcional a la apertura:
+a menor número F tendremos una mayor luminosidad.
+Algunos objetivos pueden presentar un número F fijo.
+En el caso de ser variable, su valor se regula mediante la apertura o cierre del diafragma.
+Generalmente, la apertura
+efectiva se rotula gráficamente en el objetivo, con relación a la distancia focal.
+En el caso de los objetivos con distancia focal variable,
+suele venir representado por dos valores,
+indicándose así la disponibilidad de apertura de diafragma según los extremos de funcionamiento.
+Finalmente, en esta última sección de este módulo vamos a introducir los diferentes tipos de ópticas.
+Por un lado,
+están las ópticas de distancia focal fija. Éstas se destacan por poseer una calidad óptica superior, ya
+que están construidas con menor número de elementos.
+Suelen ser más luminosas desde el punto de vista de la calidad de la imagen,
+poseen menos aberraciones geométricas y cromáticas y son más livianas y compactas que las de tipo zoom.
+Como desventaja, hacen necesaria su sustitución por otros objetivos cuando
+es preciso una distancia focal diferente, puesto que su longitud focal no puede cambiarse.
+Por el contrario,
+las ópticas de tipo zoom tienen la ventaja de ofrecer varias longitudes focales agrupadas en un solo cuerpo de objetivo,
+lo cual se consigue mediante el movimiento de los elementos ópticos dentro de la carcasa.
+Esto las hace más versátiles, ya que no requieren el cambio de objetivo para obtener una longitud focal diferente.
+Como desventaja, poseen más elementos ópticos,
+con lo cual existe una mayor probabilidad de aparición de aberraciones
+y una mayor pérdida de luz.
+Por otra parte, son más pesadas y frágiles que un objetivo fijo en igual relación de luminosidad.
+Con esto concluimos el primer módulo del tema 2 dedicado a la óptica, donde
+hemos valorado cuál es su misión en un sistema de percepción,
+los parámetros fundamentales que la definen y los diferentes tipos que tenemos disponibles en el mercado.
+
+# Curso   Semana 1   Tema 2. Óptica   Modelado de una óptica
+
+Modelado de una óptica
+ 
+Hola, en este segundo módulo del tema 2 vamos a estudiar cómo modelar la funcionalidad de una óptica en nuestro sistema de percepción.
+Para ello,
+analizaremos en primer lugar el modelo de lente fina, para pasar a continuación a valorar el modelo pin hole,
+así como el estudio comparativo de ambos.
+Finalmente, se introducirán otros parámetros representativos a tener en cuenta en el modelado de una óptica.
+El modelo de lente fina nos relaciona la distancia a la que se enfocan los rayos luminosos, en función de la distancia
+a la que se encuentran de la cámara los objetos presentes en la escena de trabajo.
+Imaginemos que tenemos un objeto que está situado a una distancia U de la cámara,
+varios de los rayos de luz reflejados por un punto de él serán captados por la lente y estos convergerán
+una distancia V.
+Como siguiente paso, sería interesante poder establecer algún tipo de relación entre ambas distancias.
+De entre todos los rayos reflejados habrá uno que será paralelo al eje óptico y que, como ya
+se explicó en el módulo anterior, cortará a este eje
+por el punto focal.
+Si tomamos en cuenta que la óptica es simétrica, un rayo de luz que corte al eje
+óptico a una distancia igual a la distancia focal antes de la lente,
+al pasar por ella saldrá paralelo a dicho eje.
+Con estos dos rayos se pueden apreciar varios triángulos semejantes y, a partir de ellos, podemos
+obtener la fórmula del modelo de lente fina,
+en la que se aprecia que la suma de la inversa de la distancia a la que está
+el punto del mundo y a la que convergen los rayos es constante e igual a la inversa de la distancia focal.
+Del análisis de esta expresión se puede deducir que los objetos más lejanos quedarán enfocados antes que
+los objetos cercanos
+y, también, que es imposible enfocar los rayos de luz provenientes de un objeto que esté más cercano que la distancia focal.
+Ahora se entiende porqué, cuando modificamos la distancia de enfoque en la óptica, conseguimos un efecto similar
+al de mover el elemento sensor,
+razón por la que se irán enfocando objetos que estén a diversas distancias de la cámara
+y desenfocando otros a distancias mayores
+o menores.
+A continuación, pasamos a valorar el modelo pin hole.
+El modelo denominado pin hole o de ojo de aguja se corresponde con el modo de funcionamiento
+de las primeras cámaras de fotografía que se desarrollaron
+y que consistían en una caja en la que se realizaba una pequeña abertura, un agujero,
+de tal forma
+que de entre todos los rayos luminosos reflejados por un punto del objeto, solamente uno de ellos alcanzaba la película fotográfica,
+en nuestro caso el sensor de la cámara.
+Cuando aplicamos este modelo a las cámaras, también suponemos que sólo existe un rayo luminoso
+que es el que une el punto focal
+y el punto del objeto.
+A una separación igual a la distancia focal se encontrará el sensor de la cámara y
+el punto de corte del rayo dará lugar a la proyección del punto del objeto en la imagen.
+Llegado a este punto,
+podemos preguntarnos cuál es la expresión matemática que relaciona las coordenadas del mundo y las de la imagen
+en el modelo.
+De nuevo, vamos a utilizar relaciones entre triángulos semejantes.
+En la figura se puede apreciar que la proporción entre las coordenadas del punto de la imagen
+y la distancia focal
+es igual a la de la coordenada del mundo y la distancia a la que está este punto de
+la cámara.
+A partir de estas relaciones podemos fácilmente deducir que cuanto mayor sea la distancia focal de la óptica empleada,
+mayores serán las dimensiones del objeto en la imagen.
+En este apartado vamos a realizar una comparativa de los dos modelos vistos.
+Para ello, vamos a recurrir al llamado factor de magnificación,
+que se define a partir de la relación entre el tamaño real del objeto y el proyectado
+sobre el plano de la imagen.
+En el modelo pin hole,
+la distancia focal es proporcional al factor de magnificación,
+mientras que en el modelo de lente fina quedaría según se muestra en la ecuación.
+Además, normalmente las dimensiones en la imagen
+son mucho menores que las del mundo real,
+de tal forma que podremos aproximar M+1 a la unidad, obteniendo así en ambos casos la misma expresión.
+Finalmente, vamos a analizar otros parámetros característicos de las ópticas.
+El ángulo visual es aquel formado por dos rayos que inciden sobre los bordes extremos de
+la zona sensible de la imagen. Obviamente, este parámetro dependerá de las dimensiones del sensor y de
+la distancia focal de la óptica utilizada.
+Una misma cámara tendrá un mayor ángulo visual conforme le coloquemos una óptica con una distancia focal
+menor,
+de esta forma distancias focales bajas son capaces de captar
+un espacio mayor que focales largas, pero por contrapartida los objetos se verán más pequeños.
+Otro parámetro importante es la profundidad de campo. Del modelo de lente fina se puede derivar
+que solamente los objetos que están a una determinada distancia estarían enfocados en el plano de imagen.
+Los rayos de luz provenientes de objetos que estuviesen más cercanos no lograrían converger sobre un punto del plano de imagen
+y los provenientes de puntos más lejanos habrían ya convergido y empezado separarse.
+Sin embargo, la experiencia demuestra que esto no es así,
+sino que en una imagen hay un rango de distancias para la que todos los objetos están enfocados.
+Este rango de distancias es la llamada profundidad de campo.
+Esto se debe a que el elemento sensor de la cámara tiene unas dimensiones pequeñas,
+pero no infinitesimales.
+Esto conduce a que, aunque los rayos de luz hayan convergido y comenzado a separarse,
+todos ellos caen dentro del mismo elemento del sensor
+y, por lo tanto, desde el punto de la imagen estarán tan enfocados como si estuvieran a la distancia de
+enfoque,
+ocurriendo lo mismo para el caso contrario.
+Un caso particular de la profundidad de campo es la distancia hiperfocal.
+Se define como aquella distancia de enfoque cuya profundidad de campo tiene un margen desde infinito hasta la mitad de ella.
+En el aro de enfoque que tenemos en las ópticas, se corresponde a la posición marcada con el símbolo de infinito.
+Con todo esto concluimos el segundo módulo del tema 2,
+donde se han introducido los conceptos para el modelado de la óptica y otros parámetros fundamentales que nos ayudarán a escogerla.
