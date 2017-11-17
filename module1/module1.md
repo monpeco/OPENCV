@@ -387,3 +387,100 @@ Se define como aquella distancia de enfoque cuya profundidad de campo tiene un m
 En el aro de enfoque que tenemos en las ópticas, se corresponde a la posición marcada con el símbolo de infinito.
 Con todo esto concluimos el segundo módulo del tema 2,
 donde se han introducido los conceptos para el modelado de la óptica y otros parámetros fundamentales que nos ayudarán a escogerla.
+
+# Curso   Semana 1   Tema 3. Cámaras digitales   Sensores CMOS y CCD
+
+Sensores CMOS y CCD
+ 
+Hola,
+bienvenidos a este nuevo tema en el que trataremos las cámaras digitales.
+Durante los próximos vídeos vamos a estudiar las nociones básicas sobre cámaras digitales que suelen emplearse
+en las diferentes aplicaciones de visión por computador.
+Para ello, vamos a ver primero una serie de aspectos que nos pueden servir para realizar
+clasificaciones de cámaras digitales,
+de tal forma que podamos decidir qué cámara emplear en cada aplicación,
+dependiendo de las necesidades que tengamos que utilizar.
+¡Empezamos!
+Las cámaras se pueden diferenciar de acuerdo a:
+el tipo de sensor,
+tendremos cámaras de sensores tipo CCD y sensores CMOS y
+también hablaremos, aunque ya en el próximo vídeo, de la clasificación de cámaras dependiendo del número sensores
+y dimensión de éstos,
+así como de si son tecnologías de dos dimensiones o de tres dimensiones.
+En último lugar, veremos los protocolos de comunicación que se emplean para conectar las cámaras digitales con las computadoras.
+Volviendo al tema de este vídeo, que trata sobre los tipos de cámaras digitales de acuerdo a la tecnología del sensor,
+tenemos dos grandes tipos de cámaras, según utilicen sensores de tipo CCD
+o sensores de tipo CMOS.
+Los primeros se basan en elementos sensibles a la luz,
+que al ser activados por un reloj, crean un pozo de potencial.
+Al llegar la luz se producen electrones que quedan atrapados en este pozo de potencial, siendo su número proporcional
+a la intensidad luminosa que reciben.
+Usando registros de desplazamiento,
+se lee la imagen línea a línea, utilizando conversores analógico-digitales.
+De esta forma, se consigue que el valor de intensidad lumínica de cada punto del sensor
+se corresponda con cada píxel de la imagen.
+Las cámaras CMOS son más modernas que las cámaras CCD.
+En estos casos, la conversión de luz nos da un valor digital,
+mediante el uso de varios transistores en el propio elemento sensible.
+Por lo tanto, a diferencia de las cámaras CCD,
+no necesitan registrar este desplazamiento ni conversor analógico-digital.
+¿Qué ventajas e inconvenientes presentan una y otra tecnología?
+La primera ventaja que nos encontramos, al comparar las cámaras de tipo CCD y CMOS,
+es que, estas últimas,
+realizan la conversión analógico-digital en el mismo fotodiodo, por lo que los sensores son más reducidos,
+ya que no son necesarios elementos electrónicos para el desplazamiento de carga.
+Por otro lado, se puede acceder a cada píxel de forma individual,
+por lo que no se necesita leer toda la imagen de una sola vez, como ocurre con
+las cámaras de tipo CCD.
+Por ello, es frecuente que, en las cámaras de tipo CMOS, se defina lo que se conoce como una región de interés
+o ROI por sus siglas en inglés,
+que se puede leer, sin necesidad de obtener el resto de la imagen,
+una región reducida de esta misma.
+Se consiguen así velocidades de transferencia superiores, al centrarnos en una región más pequeña de la imagen, que
+es sobre la que vamos a trabajar.
+Por otro lado, al ser la tecnología de CMOS igual a la de otros dispositivos electrónicos,
+como memorias o microprocesadores,
+el coste de fabricación es menor y se pueden integrar en circuitos electrónicos de control
+dentro del mismo dispositivo de captura.
+Otro aspecto interesante,
+es que el consumo eléctrico de las cámaras de tipo CMOS es más reducido que el de las cámaras de tipo CCD.
+Por último, y muy importante, las cámaras de tipo CMOS no presentan efecto blooming,
+efecto que sí sufren las cámaras de tipo CCD.
+Este efecto se da cuando un píxel de una cámara CCD recibe mucha luz,
+por lo que el número de electrones que desprende el elemento sensor es mucho mayor del que es capaz de almacenar,
+con lo que se desborda y transmite la carga que le sobra a los píxeles vecinos,
+llegándose a saturar y, por lo tanto, propagando el efecto
+a largo del sensor y,
+por ello, las cámaras CCD son más sensibles a brillos de focos de luz muy potentes.
+Un ejemplo clásico es una cámara CCD captando la imagen de la bombilla encendida.
+La imagen sería similar a lo que ve un ser humano, donde toda ella está iluminada,
+mientras que si la cámara es de tipo CMOS,
+solamente el filamento estaría claro y el resto de la bombilla sería transparente.
+En estas imágenes podéis ver dos ejemplos de situaciones parecidas en las que una de ellas sufre este efecto.
+Las imágenes muestran una puesta de sol,
+la de la izquierda sufre el efecto blooming y la de la derecha
+no lo sufre.
+De esta forma, en la imagen de la derecha podéis apreciar el contorno del sol, mientras que el
+efecto blooming no nos deja observar este detalle en la imagen de la izquierda.
+Así que, recapitulando, las cámaras CMOS tienen la ventaja de
+mejor acceso, más rápido y eficiente,
+un consumo menor y no sufren el efecto blooming que os he descrito.
+Por contra, las cámaras CCD tienen también una serie de ventajas importantes a tener en cuenta,
+como son que la calidad de la imagen es más alta,
+luego tienen mejor sensibilidad al ser mejor la relación señal a ruido.
+Esto se debe a que se tienen procesadores de señal externos al propio sensor,
+lo que permite añadir sistemas más complejos y sofisticados.
+Además, tiene menos píxeles defectuosos y la ganancia de cada uno de ellos es uniforme y
+el número de píxeles de los sensores es mayor.
+Todas estas ventajas hacen que aún se empleen en muchas de las cámaras de alto rendimiento,
+como cámaras réflex, pero de cualquier forma,
+los avances en tecnología CMOS, con sensores mayores,
+más potentes, de mejor calidad y de bajo consumo hacen que cada vez más cámaras de alto rendimiento
+incorporen sensores de tipo CMOS.
+Esto es todo en este capítulo dedicado a los sensores de las cámaras digitales.
+Cuál elegir y cómo dependerá de la aplicación que desarrollemos, pero de cualquier forma, ya tenemos los ingredientes necesarios para poder escoger
+cuál nos interesará para cada una de las situaciones.
+En el próximo capítulo trataremos otro tipo de clasificación de cámaras,
+dependiendo de las dimensiones del sensor
+y de la cantidad de sensores incorporados.
+Esto es todo, espero que os haya gustado, un saludo y hasta el próximo capítulo.
