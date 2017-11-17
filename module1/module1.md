@@ -583,3 +583,106 @@ y, gracias a este capítulo que hemos visto hoy, sabemos las ventajas e inconven
 Esto es todo, espero que os haya gustado este capítulo. Un saludo y hasta el próximo capítulo de
 hasta dónde pueden ver las máquinas,
 donde demostraremos que la visión ya no es sólo cosa de seres humanos.
+
+# Curso   Semana 1   Tema 3. Cámaras digitales   Tipos de salida y cámaras 3D
+
+Tipos de salida y cámaras 3D
+ 
+Bienvenidos a este nuevo vídeo del tema 3 del curso Hasta dónde pueden ver las máquinas.
+Como recordaréis de los vídeos anteriores, estamos estudiando las nociones básicas sobre las cámaras digitales
+que se pueden utilizar
+en las diferentes aplicaciones de visión por computador.
+En este último vídeo veremos los dos últimos aspectos que nos quedan por tratar, que son
+las cámaras tridimensionales, en las que veremos las diferentes alternativas,
+que nos permiten obtener, además de la imagen en color,
+otra información extra,
+como distancia.
+Por último, veremos un aspecto que, no por menos tratado, es menos importante.
+Me refiero al tema relacionado con los protocolos de salida, es decir, las comunicaciones entre las cámaras, o el sensor mismo,
+con el propio ordenador.
+Existen diversos métodos y el uso de uno u otro nos permitirá sacar el máximo partido
+y rendimiento a nuestro sistema.
+Las cámaras de vídeo y fotos clásicas con las que trabajamos actualmente, son cámaras de tipo
+2D, donde lo que vemos es una representación bidimensional de un mundo tridimensional.
+Pero existe un tipo de cámaras, que ha aparecido recientemente, que son los que se denominan cámaras
+de tipo 3D.
+Se llaman así porque nos proporcionan información tridimensional de los objetos,
+que hay delante de la cámara. Es decir, además de la información propia de las cámaras comunes, como el color,
+la intensidad, etc.
+tenemos información de la distancia de los objetos dentro de esta imagen.
+Básicamente, hay dos grandes grupos según se obtenga esa información, por tiempo de vuelo o por la
+deformación de un patrón de luz conocido.
+Las primeras calculan la distancia midiendo el tiempo que tarda la luz en ser reflejada por los objetos del entorno,
+de ahí su nombre,
+y esto se realiza para cada uno de los píxeles de la imagen.
+Además,
+como se utilizan diodos led para iluminar la escena,
+además de la información relativa a la distancia, dan una  imagen bidimensional en el infrarrojo cercano.
+Otra forma de obtener la información tridimensional es observar la deformación de un patrón de luz
+capturada por una cámara.
+De acuerdo a los cambios, se puede obtener la información tridimensional de la imagen.
+Ésta es la tecnología que se utiliza, por ejemplo, para la primera cámara kinect de Microsoft.
+Este sensor se empleó para grabar la secuencia que tenéis en pantalla. Aunque no es necesario
+para su funcionamiento, se suele añadir otra segunda cámara a color, dando lugar a lo que se denomina
+sensores RGBD.
+R es por Red,
+G es por Green,
+B por Blue y D
+es relativa a la distancia que obtenemos para cada uno de los píxeles de nuestra imagen,
+gracias a esta información que os he comentado.
+Por último, otro de los sistemas de cámaras que nos permiten obtener información tridimensional, son los llamados sistemas estéreos.
+Este sistema estéreo, como el que tenéis en la imagen,
+permite
+obtener la información tridimensional gracias a dos cámaras que están separadas a una distancia conocida.
+Gracias a la combinación de las dos o más cámaras
+y comprobando la diferencia de píxeles para el mismo objeto en una cámara y en la otra,
+podemos identificar la distancia a la que están estos objetos
+de una forma determinada.
+De hecho, imita a la visión humana. Es decir, nosotros como seres humanos podemos
+obtener información tridimensional gracias a que tenemos dos ojos. Con un único ojo, el ser
+humano sería incapaz de interpretar la profundidad de una imagen de una forma fiable.
+Los sistemas estéreos
+no es una teología moderna, ya que se lleva empleando en el sector de la visión por computador
+durante muchos años.
+Lo que ocurría con este tipo de sistemas es que el requerimiento computación era muy grande.
+Por lo tanto, esto hacia que no se utilizasen estas aplicaciones,
+sobre todo de cara a utilizar aplicaciones de tiempo real.
+En los últimos años, gracias a los avances en las capacidades de computación de los ordenadores,
+se ha podido lograr que estos sistemas funcionen de una forma más o menos
+robusta en tiempo real,
+llegándose a utilizar de una forma cada vez más y más frecuente.
+Por ultimo, como os comenté con anterioridad, vamos a ver los protocolos de comunicaciones entre el sensor de la cámara y el ordenador.
+Éste es un aspecto que ha cambiado mucho durante los últimos años.
+Hasta hace relativamente poco, las cámaras tenían como salida estándar una señal analógica y necesitábamos
+lo que se denominaban tarjetas capturadoras de vídeo para digitalizarlas.
+Esto ya no es necesario, ya que en los ordenadores hay varios estándares de comunicaciones serie, que permiten transmitir una cantidad de información muy alta
+al ordenador
+en tiempo real
+y, además, esta información del sensor ahora es capturada de forma digital, no analógica como teníamos anteriormente.
+En la actualidad, hay dos estándares que son los más importantes,
+que son el USB3,
+el gigabit ethernet
+y existe, además, un tercer estándar como es el Firewire,
+que aunque cada vez tiene menos importancia, no se puede descartar del todo.
+El estándar más reciente es el USB3. A partir de este estándar,
+se ha desarrollado lo que se denomina USB3 Vision,
+específicamente diseñado para cámaras digitales
+y que está siendo desarrollado y apoyado por varios fabricantes importantes de cámaras.
+Permite una transmisión de hasta 350 MB/s y una distancia máxima de 5 m.
+entre la cámara y el ordenador.
+Como alternativa existe gigabit Ethernet, que es el protocolo empleado por las tarjetas de red con las
+que vienen equipados cualquier ordenador de sobremesa u ordenador portátil.
+La versión 2.0,  que es la llamada 10 gigabyte,
+permite una transmisión muy alta de información entre el ordenador y la cámara
+y, sobre todo, una distancia muy grande entre los dos elementos
+que se puede cifrar en 100 metros.
+Como he comentado, existe un tercer estándar que es el Firewire, aunque es muy útil para las cámaras está
+un poco en desuso en los últimos años.
+Lo que ocurre es que los últimos modelos de PC directamente no traen estos puertos de comunicaciones.
+Por lo tanto, se hace cada vez menos común encontrarnos con cámaras que también lo incorporen.
+Esto es todo en este nuevo capítulo dedicado a los sensores de las cámaras digitales,
+en concreto a los sensores de tres dimensiones y a los protocolos de comunicaciones.
+De nuevo, cuál elegir dependerá de la aplicación que queremos desarrollar
+o de nuestro presupuesto.
+Espero que os haya gustado este capítulo. Un saludo y hasta el próximo capítulo de Hasta dónde puede la máquinas,
+donde demostramos que la visión ya no es sólo cosa de seres humanos.
