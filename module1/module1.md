@@ -781,3 +781,71 @@ para el sistema operativo Android.
 O el de Kornyakov y Shishkov titulado Instant OpenCv for iOS para el sistema operativo iOS.
 Tampoco es obligatorio realizar los programas en C++
 y, debido a ello, tenemos el libro OpenCV Computer Vision with Python escrito por Howse.
+
+# Curso   Semana 1   Tema 4. La biblioteca OpenCV   Manuales y página web
+
+Manuales y página web
+ 
+Hola a todos. En el siguiente vídeo práctico veremos los manuales y la página web de las librerías
+OpenCV,
+donde tenemos toda una serie de manuales online
+accesibles en Internet
+y que están accesibles en la página web de las librerías OpenCV
+y, especialmente, uno de ellos que los autores han llamado chuleta,
+porque recoge
+las funciones más importantes.
+La primera forma de acceder en la página web de las OpenCV es a través
+de los enlaces rápidos, lo que llamamos quick links,
+donde tenemos diversos apartados.
+Si pinchamos en la documentación online
+pasamos a tener un acceso a todas las bibliotecas individuales que forman la biblioteca OpenCV.
+En cada una de ellas podemos buscar todas las funciones que las componen.
+Tenemos también un enlace genérico a documentación
+y dentro está referencia,
+donde podemos ver la información de la API,
+que es la interfaz de programación
+de aplicación de las OpenCV,
+en donde podemos ver de nuevo todas las librerías,
+pero con un detalle mayor que en el enlace que hemos visto anteriormente.
+Tenemos también la guía de usuario,
+que es uno de los puntos menos elaborados en la documentación escrita por los desarrolladores de las librerías OpenCV.
+Es por ello por lo que se han escrito los libros que hemos nombrado en el
+vídeo anterior.
+En tercer lugar, tenemos los tutoriales que agrupan varias páginas por temáticas afines.
+Por un lado, tenemos los que hacen referencia
+a cada una de las bibliotecas,
+donde se nos irán poniendo diferentes ejemplos
+para usarlos en las funciones que las componen.
+También tenemos todo un tutorial de introducción, donde se nos enseña la instalación de las OpenCV en Windows
+o en Linux,
+junto al primer ejemplo para mostrar una imagen por pantalla.
+Tenemos otros tutoriales, por ejemplo, para la instalación de programación desde OpenCV bajo el sistema operativo iOS
+o el módulo de aprendizaje máquina
+que, en general, están poco desarrollados en las librerías OpenCV.
+El enlace de comienzo, Quick Start,
+hace referencia a lo que son los primeros pasos
+con la biblioteca,
+su instalación en diversos sistemas operativos
+y el uso de diversos editores de programas como el Eclipse o el Visual de Microsoft.
+En segundo lugar, vamos a ver un bloque
+que hace referencia a los distintos manuales,
+que son cinco ficheros en formato PDF.
+El primero de ellos es el manual de referencia,
+en el que si leemos el índice observaremos que están todas las librerías que forman las OpenCV
+y, además, detalla las distintas funciones que existen dentro de cada una de ellas.
+A continuación, el manual de administración,
+Manager Manual,
+está en sus comienzos
+y apenas trae
+algo de información, sobre todo de Android y Java.
+El siguiente manual, La guía de usuario, también está muy incompleta
+y apenas tenemos información de unas pocas funciones de las librerías OpenCV.
+Sin embargo, mucha más suerte tenemos con el siguiente documento dedicado a los tutoriales
+y en el que se repasan una serie de bibliotecas
+y se nos presentan diversos ejemplos, que están relativamente bien explicados
+para lo que podemos hacer
+los programas por nuestra cuenta.
+Por último, tenemos la chuleta.
+Éste es el nombre que realmente han dado los desarrolladores de las librerías OpenCV
+y en este documento tenemos las funciones más importantes junto a los parámetros que necesitamos para trabajar
+con dichas referencias.
