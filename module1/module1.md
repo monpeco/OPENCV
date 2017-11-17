@@ -735,3 +735,49 @@ que permite el desarrollo de algoritmos que corran en paralelo en ellas,
 con lo que se aceleran mucho los tiempos de cómputo.
 Las OpenCV inicialmente se desarrollaron para Windows y Linux,
 pero, posteriormente, han sido portadas a otros sistemas operativos como OS X, Android e iOS.
+
+# Curso   Semana 1   Tema 4. La biblioteca OpenCV   Bibliografía
+
+Bibliografía
+ 
+Hola a todos.
+En el siguiente vídeo práctico veremos la bibliografía actual.
+Los libros que podemos comprar y que explican las librerías OpenCV son los siguientes:
+el primer libro, Learning OpenCV, de la editorial O'Reilly,
+que fue escrito por Gary R. Bradski y Adrian Kaehler
+en el 2008
+y utiliza la versión 2.0 de las librerías OpenCV,
+por lo que hay muchos temas que se han ido implementando en la librería desde esa primera versión
+y que no son tratados en el libro.
+Por ello, se realizó una segunda edición en el año 2014
+y que, como anuncia el subtítulo del libro, utiliza el C++
+como lenguaje de programación,
+a diferencia de la primera versión que utilizaba el lenguaje de programación C.
+El segundo libro, OpenCV Cookbook
+fue escrito por Robert Lagarnière en 2011
+y su enfoque está centrado ya en el uso del lenguaje de programación C++,
+donde, en la siguiente dirección que podéis observar en pantalla,
+se puede hacer a los códigos fuente y a todas las imágenes usadas
+en el documento,
+así como a las erratas del libro.
+El tercer libro, Mastering OpenCV with Practical Computer Vision ProJect,
+está publicado por la misma editorial
+y está escrito por varios autores.
+El libro apareció en el año 2012
+y el enfoque es distinto a los dos anteriores, ya que aquí se divide el documento en varios proyectos prácticos
+que pueden ser implementados
+por las librerías OpenCV y que son descritos paso a paso.
+El siguiente libro,
+Instant OpenCV Starter de Dalal y Patel,
+es muy breve, solamente son 56 páginas, y tiene como finalidad resolver las primeras dudas
+de alguien que quiere familiarizarse con las librerías OpenCV.
+Por tanto, se explica así su instalación y unos primeros programas básicos.
+Como se ha comentado anteriormente, esta librería de funciones está portada a diversos sistemas operativos
+y, por ello, están empezando a aparecer
+libros centrados en otros sistemas operativos
+distintos a Windows y Linux.
+Así, el libro Android Application Programming with OpenCV está escrito por Howse
+para el sistema operativo Android.
+O el de Kornyakov y Shishkov titulado Instant OpenCv for iOS para el sistema operativo iOS.
+Tampoco es obligatorio realizar los programas en C++
+y, debido a ello, tenemos el libro OpenCV Computer Vision with Python escrito por Howse.
