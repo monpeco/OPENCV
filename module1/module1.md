@@ -686,3 +686,52 @@ De nuevo, cuál elegir dependerá de la aplicación que queremos desarrollar
 o de nuestro presupuesto.
 Espero que os haya gustado este capítulo. Un saludo y hasta el próximo capítulo de Hasta dónde puede la máquinas,
 donde demostramos que la visión ya no es sólo cosa de seres humanos.
+
+# Curso   Semana 1   Tema 4. La biblioteca OpenCV   Qué son las OpenCV
+
+Qué son las OpenCV
+ 
+Hola, yo soy David
+y yo soy Abdulla.
+Somos vuestros profesores de prácticas y os guiaremos en este curso en el aprendizaje de las librerías OpenCV
+de visión por computador.
+A partir de ahora no vais a vernos, pero estamos con vosotros en las prácticas.
+Por tanto, vamos a empezar este primer vídeo práctico
+y os vamos a presentar la librería de funciones OpenCV,
+que se utilizará durante el curso cuando se programen los diversos algoritmos de análisis de imágenes.
+Para ello, haremos una breve introducción al motivo por el que las OpenCV fueron diseñadas.
+Comenzamos, por tanto, con una breve introducción a la biblioteca de funciones OpenCV
+que, desde su aparición en el año 2000,
+se ha convertido en el estándar
+para cualquier aplicación de visión por computador programada en C o en C++.
+Esta biblioteca
+tiene como finalidad ayudar al avance de la visión por computador,
+aportando código abierto y optimizado
+para que los investigadores o empresas puedan desarrollar algoritmos de análisis de imágenes.
+Su inicio
+fue en el año 1999,
+cuando la empresa Intel anunció el desarrollo de esta biblioteca.
+El año siguiente publicó la primera versión alfa.
+Hasta el año 2005 aparecieron 5 versiones beta,
+en el año 2006 se publicó la primera versión desarrollada en lenguaje de programación C,
+que se extendió en la versión 2,
+tres años después, al lenguaje programación C++.
+A partir de ahí,
+aunque las OpenCV siguen manteniendo su compatibilidad
+con el lenguaje C,
+cada vez incorporan más funciones descritas en C++ y,
+en la actualidad, hay más de quinientas funciones.
+En el año 2012 se creó la fundación sin ánimo de lucro
+OpenCV.org,
+hoy en día encargada de mantener y seguir desarrollando esta biblioteca.
+Como se ha comentado anteriormente,
+los lenguajes de programación principales
+son el C y
+el C++,
+pero en las versiones recientes se han añadido el lenguaje Python y CUDA.
+Este último es una extensión del lenguaje C
+desarrollado por el fabricante de tarjetas gráficas Nvidia,
+que permite el desarrollo de algoritmos que corran en paralelo en ellas,
+con lo que se aceleran mucho los tiempos de cómputo.
+Las OpenCV inicialmente se desarrollaron para Windows y Linux,
+pero, posteriormente, han sido portadas a otros sistemas operativos como OS X, Android e iOS.
