@@ -484,3 +484,102 @@ En el próximo capítulo trataremos otro tipo de clasificación de cámaras,
 dependiendo de las dimensiones del sensor
 y de la cantidad de sensores incorporados.
 Esto es todo, espero que os haya gustado, un saludo y hasta el próximo capítulo.
+
+# Curso   Semana 1   Tema 3. Cámaras digitales   Número y dimensión de sensores
+
+Número y dimensión de sensores
+ 
+¡Hola! Bienvenidos a este nuevo vídeo del tema 3 del curso Hasta dónde pueden ver las máquinas.
+Como recordaréis del vídeo anterior, estamos estudiando las nociones básicas sobre las cámaras digitales,
+que se pueden utilizar para las diferentes aplicaciones de visión por computador.
+En este nuevo vídeo veremos diferentes opciones de sensores según el tamaño y dimensiones de los mismos
+y es que puede haber distintos sensores, ya sean unidimensionales o sensores bidimensionales
+o, incluso, podemos encontrarnos también con cámaras con un único sensor o con cámaras con varios sensores
+incorporados.
+Como veis hay muchas y varias combinaciones
+y vamos a ver, en este capítulo,
+a qué nos referimos con cada una de ellas.
+Por lo tanto,
+según las dimensiones tendremos sensores matriciales o sensores lineales.
+A su vez, cada uno de estos sensores
+pueden ser sensores en blanco y negro o sensores en color
+y, dentro de estos últimos, se puede dar el caso de un solo sensor
+o de tres sensores.
+Si estudiamos las cámaras en función de las dimensiones del sensor tendremos cámaras matriciales y cámaras lineales,
+según que el elemento sensor sea bidimensional o tenga una única línea de sensores.
+Las cámaras matriciales son las que utilizan clásicamente las cámaras fotográficas que todos conocemos,
+mientras que las lineales se utilizan, por ejemplo, en una escáner.
+Un ejemplo
+de este tipo de cámaras también es un escáner de huella dactilar,
+que son comunes, hoy por hoy, en la mayor parte de computadores, como veis en el vídeo que tenéis en la imagen.
+Otro ejemplo de sensores lineales en la industria es cuando utilizamos cámaras lineales para inspeccionar productos continuos, como puede ser
+el papel
+o la madera
+o, incluso, los lectores de códigos de barras.
+En ambos casos, las cámaras pueden capturar imágenes en blanco y negro o imágenes en color.
+En el caso de las imágenes en color,
+se puede dar que tenemos un único elemento sensor o tres elementos sensores,
+como veremos en las próximas transparencias.
+Las primeras cámaras capturaban las imágenes en blanco negro,
+ya que la salida
+que obteníamos era proporcional a la cantidad de luz que llegaba al sensor, independientemente de la longitud de onda del mismo.
+Lo que ocurre con las cámaras a color es que utilizamos filtros colocados en cada uno
+de los píxeles, que solamente dejan pasar la longitud de onda de un color determinado.
+De esta forma, podemos capturar el color.
+Para ello, necesitamos capturar, por un lado, la componente roja, la componente verde y la componente azul
+o RGB por su notación en inglés.
+En caso de tener un único sensor, lo que tendremos es una matriz de píxeles en la
+que se van alternando píxeles rojos, píxeles verdes y píxeles azules,
+como se observa en la imagen que tenéis en vuestra transparencia.
+Esa imagen representa la disposición más común de este tipo de sensores,
+que es lo que se conoce como filtro de Bayer.
+Se ve como para cada píxel
+de color
+lo que tenemos es una combinación de píxeles
+rojo, azul
+y dos píxeles verdes.
+El hecho de que haya dos píxeles verdes se debe a que el ojo humano es más sensible al color verde
+y lo que vamos a intentar en nuestra reproducción de imágenes, es reproducir de una forma lo más fielmente posible,
+la imagen que tenemos tal y como la vemos nosotros.
+Aunque la imagen de la calidad es buena,
+lo que ocurre es que para cada uno de los filtros de Bayer, cada uno de los píxeles del filtro de Bayer, corresponde
+a 4 puntos colocados distintos en el mundo,
+por lo que tendremos problemas a la hora de representar la imagen en nuestro ordenador, sobre todo
+cuando estamos intentando representar contornos.
+Por esta razón, se desarrollaron las que se conocen como cámaras de tres sensores.
+Lo que ocurre con los tres sensores es que están colocados en posiciones distintas dentro de la propia cámara
+y, mediante un juego de filtros y prismas, se lleva la luz a cada una de las tres componentes
+del sensor.
+En la animación que tenéis en la pantalla, veis cómo la imagen se divide en tres componentes distintas
+y cada una de ellas es dirigida a cada uno de los distintos sensores
+que tiene la imagen para cada uno de los colores.
+La calidad de la imagen de este tipo de sensores es mucho más alta, al igual que el precio de la cámara.
+En cuanto a los tamaños de sensor,
+las resoluciones de las cámaras matriciales son muy diversas y van desde las dimensiones mínimas de 640x480
+o 742x582, que corresponde a los antiguos estándares de vídeo analógico,
+a casi los 5000x3000 píxeles actuales.
+Desde luego,
+hay que decir que estos datos son totalmente provisionales, ya que la tendencia es construir sensores cada vez más
+potentes, con mayor número de píxeles
+y es posible que el día que vosotros veáis este vídeo
+tengáis a vuestra disposición sensores con mucha más capacidad que los que acabo de comentar.
+Otro aspecto importante a saber es que las dimensiones globales del sensor,
+que afectan a varios parámetros,
+el ángulo visual, por ejemplo,
+la tendencia es a hacer sensores cada vez más pequeños
+y, así, mientras hace unos años teníamos cámaras de 2/3",
+que eran las más frecuentes, hoy por hoy, se usan mucho las de 1/3".
+En el caso de las cámaras lineales, tendremos desde los 500 píxeles hasta muchos miles de ellos.
+La resolución de las cámaras lineales siempre va a ser mayor que las matriciales
+y aquí, otro parámetro importante en el caso de estas cámaras es el número de líneas capaces de capturar por segundo,
+que nos darán el formato de las imágenes con las que vamos a poder trabajar.
+Esto es todo en este nuevo capítulo dedicado a los sensores de las cámaras digitales,
+en concreto a su número y dimensiones.
+En este capítulo, hemos visto que las cámaras pueden tener sensores bidimensionales o sensores unidimensionales
+y, además, hemos visto que las cámaras a color pueden tener desde un único elemento sensor hasta
+tres elementos sensores, según la configuración.
+De nuevo, cuál elegir dependerá de la aplicación que queremos desarrollar
+y, gracias a este capítulo que hemos visto hoy, sabemos las ventajas e inconvenientes de cada uno de ellos.
+Esto es todo, espero que os haya gustado este capítulo. Un saludo y hasta el próximo capítulo de
+hasta dónde pueden ver las máquinas,
+donde demostraremos que la visión ya no es sólo cosa de seres humanos.
