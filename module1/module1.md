@@ -849,3 +849,69 @@ Por último, tenemos la chuleta.
 Éste es el nombre que realmente han dado los desarrolladores de las librerías OpenCV
 y en este documento tenemos las funciones más importantes junto a los parámetros que necesitamos para trabajar
 con dichas referencias.
+
+# Curso   Semana 1   Tema 5. Herramientas software del curso   Descarga e instalación de las OpenCV
+
+Descarga e instalación de las OpenCV
+ 
+Vamos a nuestro buscador, por ejemplo Google, introducimos
+www.opencv.org.
+Directamente esto nos lleva a la página web de
+OpenCV,
+donde tenemos que pinchar en OpenCV.
+Una vez que entramos dentro de su página web,
+podemos observar que en el lado derecho tenemos la zona de descargas. Vamos a la zona de OpenCV
+for Windows
+y descargamos la versión que tienen actualmente, la 3.0 RC1.
+Pinchando en OpenCV for Windows vamos directamente a la descarga del ejecutable
+que nos va a permitir descargar las librerías OpenCV.
+Pasados unos segundos se puede observar que se nos abre una ventana de diálogo
+con las librerías OpenCV.
+Decimos donde queremos descargarlas. En este caso, yo voy a realizar mi instalación directamente en el disco C,
+en el raíz y voy a darle aguardar justamente en el disco C para que se descarguen
+y descompriman las librerías.
+A continuación, damos a guardar y se puede observar que nos ha aparecido en nuestro disco C,
+en el raíz,
+el ejecutable de OpenCV 3.0.0 RC1.
+Pinchamos y nos aparece que nos lo va a extraer en C,
+decimos que sí
+y comienza
+la extracción de las librerías OpenCV en la carpeta que hemos seleccionado.
+Una vez que termina justamente la extracción de las librerías, podemos ir directamente a la carpeta opencv
+y observar, justamente, las librerías que se han descomprimido.
+Como hemos comentado,
+directamente,
+si vamos a C, que es donde hemos pedido que se descompriman
+y vamos directamente a
+"Build",
+podemos observar que tenemos x64 y x86, nos quedamos con x86
+para máquinas de 32 bits
+y entramos en vc12 que corresponde a Visual C 2013.
+A continuación, en "Propiedades"
+vamos a "Configuración avanzada del sistema" para establecer lo que son las variables de entorno.
+Estas variables de entorno, vamos directamente a Variables del sistema, decimos que queremos crear una nueva variable
+e introducimos OPENCV_DIR
+y, a continuación,
+indicamos
+el valor de la variable que será C que es donde hemos instalado,
+C:\opencv
+y, a continuación,
+\build
+y, a continuación, vamos a decir el tipo de máquina que vamos a ejecutar -en
+mi caso va a ser x86,
+que es justamente una máquina de 32 bits- para ejecutar en vc12 que corresponde
+a Visual C 2013.
+Damos a aceptar y ya tendríamos las variables de entorno configuradas
+de nuestras librerías OpenCV.
+A continuación, volvemos a "Variables de entorno",
+vamos a la parte de "path" donde tenemos que indicar dónde están estas librerías para que luego Visual C las
+pueda encontrar.
+Por tanto, vamos a "path" e introducimos
+;%OPENCV_DIR%\bin
+;%OPENCV_DIR%\bin
+De esa forma,
+Visual 2013
+edition 2013 podrá encontrar
+las librerías de OpenCV instaladas en nuestra máquina en Windows 8.
+En el próximo vídeo veremos la creación de un primer programa utilizando las librerías OpenCV 3.0,
+programadas en Visual C 2013 y Windows 8.
