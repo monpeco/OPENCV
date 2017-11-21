@@ -915,3 +915,117 @@ edition 2013 podrá encontrar
 las librerías de OpenCV instaladas en nuestra máquina en Windows 8.
 En el próximo vídeo veremos la creación de un primer programa utilizando las librerías OpenCV 3.0,
 programadas en Visual C 2013 y Windows 8.
+
+# Curso   Semana 1   Tema 5. Herramientas software del curso   Configuración del MSVC++
+
+Configuración del MSVC++
+ 
+Veremos en este vídeo práctico la utilización de las librerías OpenCV con Visual Studio 2013.
+Por tanto, vamos directamente a Visual Studio 2013. Como podemos ver a continuación, pinchamos
+en Visual Express 2013,
+se abre Visual Studio
+y vamos directamente a Start, New project. Empezamos un nuevo proyecto, pinchamos
+y nos aparecen unas distintas opciones. Seleccionamos Win32 Console Application
+y vamos a seleccionar
+un tipo de... un nombre de fichero
+de proyecto. Por ejemplo,
+Ejemplo1
+y, a continuación, seleccionamos donde queremos guardar nuestro proyecto,
+nuestro nuevo proyecto en Visual Studio 2013.
+En concreto, voy a guardar directamente en Mis documentos,
+en Usuarios/
+/David/Documentos y aquí voy a tener directamente, en esta carpeta ProgramasConOpenCV_y_VS2013
+directamente mi proyecto.
+Por tanto, damos a Ok
+y generamos un nuevo proyecto en Visual Studio 2013.
+Para finalizar, simplemente pulsamos Siguiente y seleccionamos un proyecto vacío. Es importante que pinchamos en Empty project,
+y a continuación Finalizar.
+Una vez que hemos finalizado
+pasamos al siguiente paso,
+que es justamente seleccionar las propiedades
+de, en Visual Studio 2013, para indicar dónde están las librerías.
+Por tanto, en Properties,
+pinchando Properties vamos directamente a
+seleccionar primero para Release, para la opción de Release,
+las librerías.
+Directamente vamos a incluirle en Include directories,
+OPENCV_DIR
+donde indicaríamos justamente dónde están las cabeceras que va a utilizar
+Visual Studio 2013 de las librerías OpenCV.
+A continuación, venimos
+a la parte de Enlace,
+donde vamos a especificar, justamente, lo que son las librerías precompiladas
+que nos ha suministrado OpenCV.
+Por tanto, incluimos el directorio OPENCV_DIR,
+que ya viene incluido en el path que habíamos puesto en el vídeo anterior
+e indicamos \lib que es donde están las librerías.
+A continuación, indicamos estas librerías.
+Por tanto, en Input
+vamos a Additional Dependencies y
+una nueva característica de OpenCV 3
+es que todas librerías están insertadas
+en estas dos,
+donde podemos observar que tenemos opencv_ts300.lib
+y opencv_world300.lib,
+donde están todas las librerías de OpenCV, mucho más sencillo que en
+versiones anteriores.
+Pinchamos en Aplicar, Aceptar y pasamos a la siguiente configuración
+de Debug,
+una vez que hemos realizado la anterior de Release. Ahora pinchamos en Debug
+para incluir, justamente,
+primero las cabeceras,
+¿dónde están? Venimos a Additional Include Directories
+y volvemos a añadir
+$(OPENCV_DIR)\..\..\include
+$(OPENCV_DIR)\..\..\include
+$(OPENCV_DIR)\..\..\include
+$(OPENCV_DIR)\..\..\include
+donde hemos especificado
+dónde están las cabeceras que tiene que ir
+a buscar
+Visual Studio 2013 de OpenCV 3.
+A continuación, el enlace justamente para el compilador donde venimos a incluir las librerías precompiladas.
+Entonces en Additional Library Directories
+incluimos
+$(OPENCV_DIR)\lib
+De esta forma, estamos indicando en OpenCV 2013
+donde tiene que ir a buscar las librerías de OpenCV.
+A continuación,
+en Input
+incluimos estas librerías,
+que tienen la característica de que van a incluir una d, justamente,
+a diferencia de la opción Release,
+aquí vamos a incluir un d para especificar que son de la opción Debug.
+Por tanto,
+opencv_ts300d.
+Damos a Aplicar, a Aceptar y ya tendríamos configuradas
+las librerías dentro de nuestro entorno de programación Visual Studio 2013.
+Vamos a crear un ejemplo sencillo, pinchamos en Source Files,
+añadimos un nuevo
+fichero
+.cpp
+donde pinchamos en fichero .cpp y lo llamamos, pues por ejemplo, prueba
+y para indicar que vamos a hacer ese primer ejercicio.
+Pondríamos directamente en Browse, justamente el path que hemos utilizado para nuestro proyecto
+y yo voy a crear un ejemplo sencillo para leer simplemente una imagen
+de fichero, que luego veremos en el siguiente vídeo.
+Aquí, justamente, pues una vez que lo hemos realizado el fichero
+damos a compilar.
+En este caso, lo tenemos en la opción Debug,
+decimos Sí,
+compilamos
+y una vez que se ha compilado se ejecuta el programa y nos muestra la imagen directamente
+que hemos programado
+utilizando las librerías OpenCV en este programa, en Visual Studio 2013.
+Si quisieramos hacerlo en el modo Release, pues también pinchamos Release
+y nos ejecutaría
+en modo Release el programa.
+Tendríamos aquí directamente que decirle que sí
+y una vez que le hemos dicho que sí, pues ya nos ejecuta el programa, compila
+y nos lo ejecuta en modo Release.
+Una vez que lo tenemos justamente, nos aparece el código ejecutado
+y utilizando las librerías OpenCV nos ha leído
+la imagen y nos la ha mostrado por pantalla.
+Con esta parte, habríamos terminado lo que es justamente
+la utilización de OpenCV 3 con Visual Studio 2013 y, a continuación, veremos un ejemplo de
+cómo funciona.
