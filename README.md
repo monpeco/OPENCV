@@ -1,5 +1,7 @@
 # OPENCV
 
+**Cloned from https://github.com/jjla26/OPENCV**
+
 # Introducción a la visión por computador: desarrollo de aplicaciones con OpenCV Continuar Con El Curso
 
 # Curso   Presentación   Guía del curso   Introducción, objetivos y metodología
