@@ -16,7 +16,7 @@ A lo largo del curso se revisarán los tipos básicos de elementos y sensores, v
 
 Si este es tu primer curso en edX, no dudes en apuntarte al curso Demo para conocer cómo funciona la plataforma: https://www.edx.org/course/demox-edx-demox-1.
 
-OBJETIVOS
+**OBJETIVOS**
 
 Durante el desarrollo del curso, los estudiantes irán adquiriendo conocimientos y capacidades tales como:
 
@@ -94,33 +94,3 @@ Tema 19. Transformaciones morfológicas y descriptores.
 
 Tema 20. Reconocimiento de patrones.
 
-# Curso   Presentación   Guía del curso   Conocimientos previos para poder realizar el curso
-
-Conocimientos previos para poder realizar el curso
-
-¡Hola!
-En este vídeo queremos describir los conocimientos previos que debe tener el alumno
-que desee realizar este curso Mooc.
-Cualquier persona interesada en saber qué es la visión por computador
-debe de tener unas nociones básicas de cálculo y álgebra,
-por ejemplo, las adquiridas en los primeros cursos de cualquiera de los grados universitarios
-en los que se enseñan disciplinas técnicas.
-Durante el curso,
-dejaremos disponible material de lectura adicional
-que sirva para profundizar algunos de los aspectos
-que se hayan introducido en los vídeos.
-La restricción más importante es que aquellas personas interesadas en el seguimiento del curso,
-deben de conocer algún lenguaje de programación.
-Los ejemplos que se van a enseñar en los diversos módulos
-utilizan el lenguaje de programación C++.
-Sin embargo,
-un alumno que sepa C o Python
-puede seguirlo,
-aunque deberá hacer un esfuerzo mayor.
-Lo mismo puede decirse si el alumno tiene sólo conocimientos en Matlab.
-No va a ser requisito el que el alumnado utilice un sistema operativo u otro,
-aunque los ejemplos se mostrarán en Windows, el sistema operativo más utilizado,
-la biblioteca de funciones OpenCV está portada a Windows, Linux, OS X, iOS y Android.
-Esperamos que el curso os resulte útil y entretenido.
-Hemos dedicado un gran esfuerzo en prepararlo y confiamos en que, al terminarlo,
-el número de personas interesadas en desarrollar aplicaciones basadas en la visión por computador haya crecido.
